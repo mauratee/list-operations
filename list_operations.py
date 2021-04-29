@@ -1,5 +1,5 @@
 """Utilities for manipulating lists."""
-
+months = ['Jan', 'Feb', 'Mar']
 
 def head(input_list):
     """Return the first item of the input list.
@@ -10,8 +10,9 @@ def head(input_list):
       'Jan'
     """
 
-    return None
+    return input_list[0]
 
+print(head(input_list))
 
 def tail(input_list):
     """Return a new list of all items, excluding the first item.
