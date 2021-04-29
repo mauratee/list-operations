@@ -1,6 +1,7 @@
 """Utilities for manipulating lists."""
 input_list = ['Jan', 'Feb', 'Mar']
 long_list =[0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+notes_list = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
 
 def head(input_list):
     """Return the first item of the input list.
@@ -171,7 +172,7 @@ def replace_third_and_last(input_list):
 
 print(replace_third_and_last(long_list))
 
-def replace_middle(input_list):
+def replace_middle(long_list):
     """Replace all elements of a list but the first two and last two with 42 and 37.
 
     After the replacement, 42 and 37 should appear in that order in input_list.
@@ -186,26 +187,30 @@ def replace_middle(input_list):
     True
 
     """
+    long_list[2:-2] = [42, 37] 
+    return 
+    #pass
 
-    pass
+print(replace_middle(long_list))
 
-
-def delete_third_and_seventh(input_list):
+def delete_third_and_seventh(notes_list):
     """Remove third and seventh elements of input_list and return nothing.
 
     For example:
 
-    >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
-    >>> delete_third_and_seventh(notes)
-    >>> notes == ['Do', 'Re', 'Fa', 'So', 'La', 'Do']
-    True
+    notes_list = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
+   
+
 
     """
+    del notes_list [2]
+    del notes_list [6]
+    #print(notes_list)
+    return
+    #pass
 
-    pass
 
-
-def delete_middle(input_list):
+def delete_middle(notes_list):
     """Remove all elements from input_list except the first two and last two.
 
     Return nothing.
@@ -218,7 +223,8 @@ def delete_middle(input_list):
     True
 
     """
-
+    del notes_list [2:-2]
+    return
     pass
 
 
