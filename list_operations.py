@@ -1,5 +1,6 @@
 """Utilities for manipulating lists."""
 input_list = ['Jan', 'Feb', 'Mar']
+long_list =[0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
 
 def head(input_list):
     """Return the first item of the input list.
@@ -38,7 +39,9 @@ def last(input_list):
 
     """
 
-    return []
+    return input_list[-1]
+
+print(last(input_list))
 
 
 def top(input_list):
@@ -51,7 +54,9 @@ def top(input_list):
 
     """
 
-    return []
+    return input_list[:-1]
+
+print(top(input_list))
 
 
 def first_three(input_list):
@@ -64,8 +69,9 @@ def first_three(input_list):
 
     """
 
-    return []
+    return input_list[0:3]
 
+print(first_three(input_list))
 
 def last_five(input_list):
     """Return the last five elements of the input list.
@@ -76,9 +82,10 @@ def last_five(input_list):
     [15, 18, 21, 24, 27]
 
     """
+    #input_list =[0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+    return input_list[-5:]
 
-    return []
-
+print(last_five(input_list))
 
 def middle(input_list):
     """Return all elements of input_list except the first two and the last two.
