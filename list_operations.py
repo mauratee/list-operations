@@ -1,5 +1,5 @@
 """Utilities for manipulating lists."""
-months = ['Jan', 'Feb', 'Mar']
+input_list = ['Jan', 'Feb', 'Mar']
 
 def head(input_list):
     """Return the first item of the input list.
@@ -24,8 +24,9 @@ def tail(input_list):
 
     """
 
-    return []
+    return input_list[1:]
 
+print(tail(input_list))
 
 def last(input_list):
     """Return the last item of the input list.
