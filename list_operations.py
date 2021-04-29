@@ -87,7 +87,7 @@ def last_five(input_list):
 
 print(last_five(input_list))
 
-def middle(input_list):
+def middle(long_list):
     """Return all elements of input_list except the first two and the last two.
 
     For example:
@@ -97,10 +97,12 @@ def middle(input_list):
 
     """
 
-    return []
+    return long_list[2:-2]
+
+print(middle(long_list))
 
 
-def inner_four(input_list):
+def inner_four(long_list):
     """Return the third, fourth, fifth, and sixth elements of input_list.
 
     For example:
@@ -110,7 +112,9 @@ def inner_four(input_list):
 
     """
 
-    return []
+    return long_list[2:6]
+
+print(inner_four(long_list))
 
 
 def inner_four_end(input_list):
@@ -126,7 +130,9 @@ def inner_four_end(input_list):
 
     """
 
-    return []
+    return input_list[-6:-2]
+
+print(inner_four_end(long_list))
 
 
 def replace_head(input_list):
@@ -141,8 +147,11 @@ def replace_head(input_list):
 
     """
 
-    pass
+    input_list[0] = 42
+    return
+    #pass
 
+print(replace_head(long_list))
 
 def replace_third_and_last(input_list):
     """Replace third and last elements of input_list with 37 and return nothing.
@@ -155,9 +164,12 @@ def replace_third_and_last(input_list):
     True
 
     """
+    input_list[2] = 37
+    input_list[-1] = 37
+    return
+    #pass
 
-    pass
-
+print(replace_third_and_last(long_list))
 
 def replace_middle(input_list):
     """Replace all elements of a list but the first two and last two with 42 and 37.
